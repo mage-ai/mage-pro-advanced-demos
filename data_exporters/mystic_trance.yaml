@@ -1,0 +1,4 @@
+config:
+  file_path: /home/src/default_repo/mage_output.duckdb
+  if_exists: replace
+destination: duckdb

@@ -1,0 +1,118 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    global_data_product:
+      uuid: titanic_users
+  downstream_blocks:
+  - prepare_data_for_training
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Core data users
+  retry_config: null
+  status: executed
+  timeout: null
+  type: global_data_product
+  upstream_blocks: []
+  uuid: core_data_users
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_source: {}
+  downstream_blocks:
+  - train_ml_model
+  - online_inference
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Prepare data for training
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - core_data_users
+  uuid: prepare_data_for_training
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - online_inference
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Train ML model
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - prepare_data_for_training
+  uuid: train_ml_model
+- all_upstream_blocks_executed: true
+  color: green
+  configuration: {}
+  downstream_blocks:
+  - explain_the_prediction
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Online inference
+  retry_config: null
+  status: executed
+  timeout: null
+  type: custom
+  upstream_blocks:
+  - train_ml_model
+  - prepare_data_for_training
+  uuid: online_inference
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: yaml
+  name: Explain the prediction
+  retry_config: null
+  status: executed
+  timeout: null
+  type: ai
+  upstream_blocks:
+  - online_inference
+  uuid: explain_the_prediction
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-09-23 22:01:21.724792+00:00'
+created_by: admin
+data_integration: null
+description: Train model to predict salaries
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: ML training and inference
+notification_config: {}
+overrides: null
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+state_store_config: {}
+tags:
+- ml
+- inference
+type: python
+uuid: ml_training_and_inference
+variables_dir: /home/src/mage_data/default_repo
+widgets: []

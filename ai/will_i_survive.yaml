@@ -1,0 +1,5 @@
+prompt: |
+    Study the sample survival data framework.
+    Then, based on the information about me that I provide, predict if I’ll survive.
+    Then tell me why or why not. 
+    Use everything you know about me to give me details why or why not.

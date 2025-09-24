@@ -1,0 +1,4 @@
+prompt: |
+    Study the sample survival data, then give me a super detailed
+    framework for being able to decide whether a person will survive
+    a boat crash given any information they provide.

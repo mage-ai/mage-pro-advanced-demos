@@ -1,0 +1,9 @@
+titanic_users:
+  object_type: pipeline
+  object_uuid: sql___python_workflow
+  outdated_after:
+    seconds: 86400
+  repo_path: /home/src/default_repo
+  settings:
+    load_api_data_from_ingestion:
+      partitions: 1

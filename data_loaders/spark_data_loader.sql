@@ -1,0 +1,2 @@
+-- Docs: https://docs.mage.ai/guides/sql-blocks
+-- Configure your connection in io_config.yaml under the project folder.

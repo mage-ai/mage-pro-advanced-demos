@@ -1,0 +1,83 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    dynamic:
+      parent: true
+  downstream_blocks:
+  - fun_facts_about_number
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Dynamic block based on variables
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: dynamic_block_based_on_variables
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    dynamic:
+      parent: false
+      reduce_output: true
+  downstream_blocks:
+  - trigger_spark_workflow
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: yaml
+  name: Fun facts about number
+  retry_config: null
+  status: executed
+  timeout: null
+  type: ai
+  upstream_blocks:
+  - dynamic_block_based_on_variables
+  uuid: fun_facts_about_number
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Trigger Spark workflow
+  retry_config: null
+  status: executed
+  timeout: null
+  type: data_exporter
+  upstream_blocks:
+  - fun_facts_about_number
+  uuid: trigger_spark_workflow
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-09-23 21:28:42.145520+00:00'
+created_by: admin
+data_integration: null
+description: Execute concurrent blocks
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: Dynamic blocks workflow
+notification_config: {}
+overrides: null
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+state_store_config: {}
+tags:
+- dynamic
+type: python
+uuid: dynamic_blocks_workflow
+variables_dir: /home/src/mage_data/default_repo
+widgets: []

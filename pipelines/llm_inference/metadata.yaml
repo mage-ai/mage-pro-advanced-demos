@@ -1,0 +1,100 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    global_data_product:
+      uuid: titanic_users
+  downstream_blocks:
+  - sample_survival_data
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Core data users
+  retry_config: null
+  status: executed
+  timeout: null
+  type: global_data_product
+  upstream_blocks: []
+  uuid: core_data_users
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_path: transformers/sample_survival_data.py
+    file_source:
+      path: transformers/sample_survival_data.py
+  downstream_blocks:
+  - study_sample_data
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: Sample survival data
+  retry_config: null
+  status: executed
+  timeout: null
+  type: transformer
+  upstream_blocks:
+  - core_data_users
+  uuid: sample_survival_data
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: yaml
+  name: Study sample data
+  retry_config: null
+  status: executed
+  timeout: null
+  type: ai
+  upstream_blocks:
+  - sample_survival_data
+  uuid: study_sample_data
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: yaml
+  name: Will I survive
+  retry_config: null
+  status: executed
+  timeout: null
+  type: ai
+  upstream_blocks:
+  - study_sample_data
+  uuid: will_i_survive
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2025-09-23 23:58:24.526736+00:00'
+created_by: admin
+data_integration: null
+description: Online inference for an LLM using prepared data and runtime variables
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: LLM inference
+notification_config: {}
+overrides: null
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+state_store_config: {}
+tags:
+- llm
+- inference
+type: python
+uuid: llm_inference
+variables_dir: /home/src/mage_data/default_repo
+widgets: []

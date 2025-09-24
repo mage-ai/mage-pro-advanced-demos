@@ -1,0 +1,3 @@
+prompt: |
+    Give a reasonable explanation as to why the person survived based on all the attributes.
+    Then tell me what attributes should have changed for them to survive.
