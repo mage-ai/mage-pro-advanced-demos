@@ -1,6 +1,6 @@
 # Mage Pro Advanced Use Cases
 
-![Pipeline Graph](./pipeline_graph.png)
+![Pipeline Graph](https://raw.githubusercontent.com/mage-ai/mage-pro-advanced-demos/refs/heads/master/pipeline-graph.png)
 
 ## Ingestion workflow
 
