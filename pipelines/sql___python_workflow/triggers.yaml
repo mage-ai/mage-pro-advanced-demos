@@ -12,3 +12,17 @@ triggers:
   status: active
   token: 75989097810d465d8d01c44d3ab9ba1b
   variables: null
+- description: null
+  envs: []
+  last_enabled_at: 2025-09-25 22:12:31.311759+00:00
+  name: Hourly run after ingestion
+  pipeline_uuid: sql___python_workflow
+  schedule_interval: '@hourly'
+  schedule_type: time
+  settings:
+    landing_time_enabled: true
+  sla: null
+  start_time: 2023-07-01 07:15:30+00:00
+  status: active
+  token: c900c247df7c4d4288e1e9d008427c22
+  variables: {}
