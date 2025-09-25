@@ -1,0 +1,14 @@
+triggers:
+- description: null
+  envs: []
+  last_enabled_at: 2025-09-24 00:06:52.148854+00:00
+  name: Online inference LLM
+  pipeline_uuid: llm_inference
+  schedule_interval: null
+  schedule_type: api
+  settings: null
+  sla: null
+  start_time: 2025-09-24 00:06:00+00:00
+  status: active
+  token: a8ce0b0077204897b2801b9216155ae5
+  variables: {}

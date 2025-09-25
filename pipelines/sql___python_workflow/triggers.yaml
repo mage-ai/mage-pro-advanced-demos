@@ -1,0 +1,14 @@
+triggers:
+- description: null
+  envs: []
+  last_enabled_at: 2025-09-25 21:42:10.258126+00:00
+  name: GLOBAL_DATA_PRODUCT_TRIGGER
+  pipeline_uuid: sql___python_workflow
+  schedule_interval: null
+  schedule_type: time
+  settings: null
+  sla: null
+  start_time: null
+  status: active
+  token: 75989097810d465d8d01c44d3ab9ba1b
+  variables: null

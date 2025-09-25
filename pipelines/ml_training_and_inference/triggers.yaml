@@ -1,0 +1,27 @@
+triggers:
+- description: null
+  envs: []
+  last_enabled_at: 2025-09-23 22:04:28.847115+00:00
+  name: API_TRIGGER_CREATED_FROM_CODE
+  pipeline_uuid: ml_training_and_inference
+  schedule_interval: null
+  schedule_type: api
+  settings: null
+  sla: null
+  start_time: 2025-09-23 22:04:28.846996+00:00
+  status: active
+  token: 2b33987a327440f997825f1c572d12b6
+  variables: null
+- description: null
+  envs: []
+  last_enabled_at: 2025-09-23 23:45:05.277371+00:00
+  name: Online inference endpoint
+  pipeline_uuid: ml_training_and_inference
+  schedule_interval: null
+  schedule_type: api
+  settings: null
+  sla: null
+  start_time: 2025-09-23 23:44:00+00:00
+  status: active
+  token: b0ba8c27407d4a618d879a56efe58a02
+  variables: {}

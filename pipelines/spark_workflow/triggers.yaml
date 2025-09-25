@@ -1,0 +1,14 @@
+triggers:
+- description: null
+  envs: []
+  last_enabled_at: 2025-09-23 21:48:41.108000+00:00
+  name: API_TRIGGER_CREATED_FROM_CODE
+  pipeline_uuid: spark_workflow
+  schedule_interval: null
+  schedule_type: api
+  settings: null
+  sla: null
+  start_time: 2025-09-23 21:48:41.107958+00:00
+  status: active
+  token: e55bba242256487ea0b258e695a533de
+  variables: null
